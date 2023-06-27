@@ -1,0 +1,423 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Changa:wght@200;400;600;800&family=Modak&family=Montserrat:wght@100;200;300;400;500&family=Oi&family=Poppins:wght@100;500&family=Titan+One&display=swap');
+
+:root{
+    --primer-color:#e7e8ea;
+    --segundo-color:#12CB7E;
+    --tercer-color:#293132;
+}
+*{
+    font-family: 'Changa', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+
+}
+.logo-1{
+    border-radius: 50%;
+    border:3px solid var(--segundo-color);
+    width: 70px;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+html{
+    font-size:62.5% ;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    width:.8rem ;
+}
+html::-webkit-scrollbar-track{
+   background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+
+ }
+ body{
+    background: var(--primer-color);
+ }
+ section{
+    padding: 2rem 7%;
+ }
+ .hidden{
+    transform: scale(0.8);
+    opacity: 0;
+    transition: all .5s ease-out;
+}
+.mostrar{
+   transform: scale(1);
+   opacity: 1;
+}
+ /* header------------------------------------- */
+ .header{
+    background:var(--primer-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top:0;left:0;right:0;
+    z-index: 1000;
+}
+.header .navbar{
+    margin-left: 18rem;
+}
+.header .logo img{
+    height: 6rem;
+}
+.header .navbar a{
+    margin:0 1rem;
+    font-size:2rem ;
+    color: var(--tercer-color);
+    padding: 1.5rem;
+    border-radius: .5rem;
+    
+}
+.header .navbar a:hover{
+    color: var(--primer-color);
+    background-color: var(--segundo-color);
+    border-bottom: .1rem solid var(--main-color);
+
+}
+.header #menu-btn{
+    color: var(--tercer-color);
+    cursor: pointer;
+    font-size: 2.5rem;
+
+
+}
+.header #menu-btn:active{
+transform:scale(1.5) ;
+}
+
+ #menu-btn{
+    display: none;
+
+} 
+/* ---------home------------------------------*/
+.home{
+        min-height: 100vh;
+        display:flex;
+        align-items: center;
+        background:url(img/inicio.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        justify-content: center;
+}
+.home .titulo h2{
+    font-size: 9rem;
+    color: var(--segundo-color);
+    text-decoration:underline #0fa567;
+}
+/* about------------------------------- */
+.heading{
+    text-align: start;
+    font-size: 7rem;
+    color: var(--tercer-color);
+    text-decoration:underline var(--tercer-color);
+
+}
+.row{
+    display: flex;
+    align-items: center;
+    border-radius: .5rem;
+}
+.about img{
+    border-radius: .5rem 0 0 .5rem;
+    min-width:36vw ;
+    
+}
+.about .row{
+    background: var(--segundo-color);
+}
+.about .row .content h3{
+    font-weight: 700;
+    padding: 0 2rem ;
+    font-size: 4.5rem;
+    color: var(--primer-color);
+}
+.about .row .content p{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #2a2a2a;
+    padding: 1rem;
+    line-height: 1.8;
+}
+
+ /* menu------------------------------- */
+
+ .menu .box-container1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap: 1.5rem;
+}
+.menu .box-container1 .box1{
+    background: var(--segundo-color);
+    padding: 4rem 1rem;
+    text-align: center;
+    /* border-radius: .5rem 25%; */
+    border-radius: .5rem;
+}
+
+.menu .box-container1 .box1 img{
+    height:30rem ;
+    width: 30rem;
+    object-fit: cover;
+    /* border-radius: .5rem 25%; */
+    border-radius: .5rem;
+}
+.menu .box-container1 .box1 h3{
+    color: var(--primer-color);
+    text-decoration: underline #fff;
+    font-size: 3rem;
+    padding: .5rem 0;
+}
+.menu .box-container1 .box1 ul{
+    text-transform: uppercase;
+    color: var(--tercer-color);
+    text-align:start;
+    padding-left: 1.5rem;
+    font-size: 2rem;
+    list-style: none;
+
+}
+.menu .box-container1 .box1 .price{
+    color: var(--tercer-color);
+    font-size: 3.5rem;
+    padding: .5rem 1rem;
+    text-align: end;
+}
+.menu .box-container1 .box1 .price span{
+    color:var(--primer-color);
+    font-size: 1.5rem;
+   text-decoration: line-through;
+}  
+/* contacto */
+.heading3{
+    text-align: start;
+
+}
+.heading3 h3{
+    text-align: start;
+    font-size: 7rem;
+    color: var(--tercer-color);
+    text-decoration:underline var(--tercer-color);
+   
+}
+.contact .row{
+    background: var(--segundo-color);
+    flex-wrap: wrap;
+    gap: 1rem;
+  
+   
+}
+
+.contact .row a{
+    color: var(--rosita-color);
+    font-size: 1.5rem;
+ 
+    /* justify-content: space-between; */
+}
+.contact .row .container-contacto{
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+}
+.contact .row .container-contacto span{
+    color: var(--second-color);
+    font-size: 2rem;
+    padding: 1rem;
+    font-weight: lighter;
+    flex-direction: row;
+    margin: 0 auto;
+    
+}
+.contact .row .container-contacto a{
+    color:var(--second-color);
+    font-size: 1.5rem;
+    padding: 1rem;
+    flex-direction:row;
+    margin: 0 auto;
+
+}
+.contact .row .map{
+    /* flex: 65rem; */
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 0.5rem .5rem 0 0 ;
+   
+}
+/* footer section------------------  */
+.footer{
+    background: var(--segundo-color);
+    text-align: center;
+}
+.footer .shar a{
+    height:5rem ;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: #fff;
+    border: var(--border);
+    margin: .3rem;
+    border-radius:50% ;
+
+}
+.footer .shar a:hover{
+    background-color: var(--primer-color);
+    color: var(--segundo-color);
+}
+.footer .links{
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap ;
+    padding: 2rem 0;
+    gap: 1rem;
+}
+.footer .links a{
+    padding: .7rem 2rem;
+    color: #fff;
+    border: var(--border);
+    font-size: 2rem;
+}
+.footer .links a:hover{
+    background-color: var(--primer-color);
+    color: var(--segundo-color);
+    border-radius: .5rem;
+}
+.footer .credits{
+    font-size: 2rem;
+    color: #fff;
+   
+    padding: 1.5rem;
+}
+.footer .credits span{
+    color:var(--tercer-color) ;
+}
+/*------------------*/
+@media (max-width: 991px) {
+    html{
+        font-size:55% ;
+       
+    }
+    .header{
+        padding: 1.5rem 2rem;
+    }
+    section{
+        padding: 2rem;
+     }
+  }
+
+  @media (max-width: 768px) {
+    .logo-1{
+        width: 6.6rem;
+    }
+    #menu-btn{
+        display: inline-block;
+    }
+    .header .navbar{
+        position: absolute;
+        top: 100%;right: -100%;
+        background: var(--tercer-color);
+        width: 40rem;
+        height: 100vh;
+        transition: 1s ease; 
+    }
+    .header .navbar.active{
+        right: 0px;
+        transition: .8s ease;
+
+    }
+    .header .navbar a{
+        color:#ccc;
+        display: block;
+        margin: 3rem;
+        padding: 1rem;
+        font-size:2.5rem ;
+        text-align:start;
+    }
+    .home{
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+    .home .content h3{
+        font-size: 4.5rem;
+    }
+    .home .content p{
+        font-size: 1.5rem;
+    }
+
+  }
+
+
+
+  @media (max-width: 450px) {
+    html{
+        font-size:50% ;
+       
+    }
+    .logo-1{
+        width: 6.5rem;
+    }
+    .heading3 h3{
+        font-size: 5rem;
+    }
+    .about .row .content p{
+        font-size: 1.3rem;
+    }
+    .about .row img{
+        max-height:60vw!important;
+        width: 100%;
+        object-fit: cover;
+    }
+    .about .row {
+        display: block;
+    }
+    .about .row .content h3{
+        font-size: 3rem;
+    }
+    .heading{
+        font-size:5rem ;
+    }
+    .home{
+        object-fit: contain;
+        background-size:100% ;
+    }
+    .home .titulo h2{
+        font-size: 5rem;
+    }
+    .header .navbar{
+        position: absolute;
+        top: 100%;right: -100%;
+        background: var(--primer-color);
+        width: 100%;
+        height: 100vh;
+        transition: 1s ease; 
+    }
+    .header .navbar.active{
+        right: 0px;
+        transition: .8s ease;
+
+    }
+    .header .navbar a{
+        color:var(--segundo-color);
+        display: block;
+        margin: 3rem;
+        padding: 1rem;
+        font-size:2.5rem ;
+        text-align:center;
+    }
+  
+
+ }
