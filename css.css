@@ -392,8 +392,14 @@ transform:scale(1.5) ;
         font-size:5rem ;
     }
     .home{
-        object-fit: contain;
-        background-size:100% ;
+        min-height: 100vh;
+        display:flex;
+        align-items: center;
+        background:url(img/inicio.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        justify-content: center;
+        margin-top: 3.5rem;
     }
     .home .titulo h2{
         font-size: 5rem;
